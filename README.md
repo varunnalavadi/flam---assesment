@@ -57,9 +57,7 @@ Used a **two-stage optimization** strategy:
 #### 🧩 Stage 1 — Global Search (Differential Evolution)
 - Searches the parameter space broadly to avoid local minima.
 - Objective function minimized the **L1 error**:
-  \[
-  \sum_t |x_\text{model} - x_\text{data}| + |y_\text{model} - y_\text{data}|
-  \]
+ Σ_t ( |x_model − x_data| + |y_model − y_data| )
 
 #### ⚙️ Stage 2 — Local Refinement (Least Squares)
 - Used `scipy.optimize.least_squares` for precise fine-tuning within bounds.
@@ -86,13 +84,9 @@ All estimated parameters lie within the valid range.
 
 ## 📈 Final Parametric Equation
 
-\[
-\left(
-t\cos(0.5163) - e^{-0.05|t|}\sin(0.3t)\sin(0.5163) + 55.0136,\;
-42 + t\sin(0.5163) + e^{-0.05|t|}\sin(0.3t)\cos(0.5163)
-\right)
-\]
+x = t*cos(0.5163) - e^(-0.05|t|)*sin(0.3t)sin(0.5163) + 55.0136
 
+y = 42 + tsin(0.5163) + e^(-0.05|t|)*sin(0.3t)*cos(0.5163)
 Visualize it directly on **[Desmos](https://www.desmos.com/calculator/rfj91yrxob)** by pasting the above expression.
 
 ---
