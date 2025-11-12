@@ -11,6 +11,7 @@ Estimate the unknown parameters **θ**, **M**, and **X** in the given 2D paramet
 The given parametric equations are:
 
 x = t*cos(θ) - e^(M|t|)*sin(0.3t)*sin(θ) + X
+
 y = 42 + t*sin(θ) + e^(M|t|)*sin(0.3t)*cos(θ)
 
 
