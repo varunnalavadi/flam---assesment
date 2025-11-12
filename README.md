@@ -1,4 +1,4 @@
-# flam---assesment
+
 # 🔬 Parametric Curve Fitting – R&D / AI Assignment
 
 ## 🎯 Objective
